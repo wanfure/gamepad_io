@@ -1,0 +1,8 @@
+# 忽略编译生成的目录
+/build/
+/install/
+/log/
+
+# 忽略 Python 运行产生的缓存
+__pycache__/
+*.pyc

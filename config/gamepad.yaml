@@ -1,0 +1,8 @@
+/**:  # 公共配置，让读取此文件的节点使用同一设备编号
+  ros__parameters:  # ROS 2 固定的参数配置字段，名字不能改
+    device_id: 0  # 选择编号为 0 的手柄
+
+joy_node:  # 以下参数只配置手柄驱动节点
+  ros__parameters:
+    deadzone: 0.01  # 摇杆中心附近 1% 的范围按零处理
+    autorepeat_rate: 20.0  # 状态不变时，每秒重复发布 20 次
